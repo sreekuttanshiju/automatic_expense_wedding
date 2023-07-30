@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wedding Planning Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wedding Planning Software</h1>
+        <label for="budget">Enter your budget:</label>
+        <input type="number" id="budget" placeholder="Enter your budget">
+
+        <label for="ornamentsBudget">How much are you planning for ornaments? (in rupees):</label>
+        <input type="number" id="ornamentsBudget" placeholder="Enter the ornaments budget">
+
+        <label for="attendees">How many people will attend the function?</label>
+        <input type="number" id="attendees" placeholder="Enter the number of attendees">
+
+        <fieldset>
+            <legend>Select food preference:</legend>
+            <input type="radio" id="vegetarian" name="foodPreference" value="vegetarian">
+            <label for="vegetarian">Vegetarian</label><br>
+            <input type="radio" id="nonVegetarian" name="foodPreference" value="nonVegetarian">
+            <label for="nonVegetarian">Non-Vegetarian</label><br>
+            <input type="radio" id="both" name="foodPreference" value="both">
+            <label for="both">Both</label><br>
+        </fieldset>
+
+        <label for="dressBudget">How much are you planning for wedding dresses? (in rupees):</label>
+        <input type="number" id="dressBudget" placeholder="Enter the dress budget">
+
+        <label for="otherExpenses">Enter the estimated amount for other expenses (in rupees):</label>
+        <input type="number" id="otherExpenses" placeholder="Enter other expenses">
+
+        <button onclick="suggestOptions()">Get Suggestions</button>
+        <div id="suggestions"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
